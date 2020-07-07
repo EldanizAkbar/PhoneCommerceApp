@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../JS/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Shop</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="images/lo.png">
+    
+</head>
+
+<body>
+    <header>
+       
+
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 ">
+            <div class="container px-0">
+                <a class="navbar-brand" href="home.html">
+                    <img src="images/main_logo.png" alt="logophoto" width="150px" height="auto">
+                </a>
+                    <ul class=" navbar-nav ">
+                        <li class="nav-item active mr-3">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="pages/basket.html">Basket</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Section that contain background photo -->
+        <section>
+            <div class="img_container row  mx-0">
+                <div class="cover_color">
+                    <h1 class="main_text">Welcome to Our Shop</h1>
+                </div>
+              </div>
+        </section>
+        <section>
+            <div class="container mt-5 mb-5 text-center ">
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <h2>Choose your brand</h2>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4"><button type="button" class="btn btn-primary chosen mt-2" id="Xiaomi">Xiaomi</button></div>
+                    <div class="col-md-4"><button type="button" class="btn btn-primary chosen mt-2" id="Samsung">Samsung</button></div>
+                    <div class="col-md-4"><button type="button" class="btn btn-primary chosen mt-2" id="IPhone">IPhone</button></div>
+                </div>
+            </div>
+        </section>
+           <!--Section that contain phone cards -->
+           <section>
+                <div class="container mt-5 mb-5" id="main_container">
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-6 order-2 order-md-1">
+                            <h1 class="Xiaomi_phones mt-5 " id="phone_brand"></h1>
+                        </div>
+                        
+                        <div class="col-md-6 ml-auto text-right order-1 order-md-2">
+                            <div class="basket-item">
+                                <img src="images/shop_araba.png" alt="" width="150px" height="auto" class="mt-4">
+                                 <a href="pages/basket.html" id="basket-count" class="basket_counting">0</a>
+                             </div>
+                        </div>
+                    </div>
+                    </div>
+                
+              <div class="container mt-5 text-center ml-auto" id="cod">
+                <div id="product_div" class="row mx-auto">
+                </div>
+                    <div id="product_pagination" class="row my-auto mx-auto text-center">
+                        <div id="pages" class="mx-auto mb-5 mt-3">
+    
+                        </div>
+                    </div>
+
+               
+              
+
+              </div>
+                    
+                   
+               
+
+            
+
+           </section>
+          
+
+    </main>
+    <script src="JS/home.js"></script>
+    <script src="JS/products.js"></script>
+    <script src="JS/Productdata.js"></script>
+    <script src="JS/Productmaker.js"></script>
+</body>
+
+</html>

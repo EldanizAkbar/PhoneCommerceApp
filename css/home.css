@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav-link {
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+.img_container{
+    width: 100%;
+    height: 650px;
+    background-image: url(https://fdn.gsmarena.com/imgroot/news/19/12/phones-of-the-decade/-727w2/gsmarena_001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cover_color{
+    width: 100%;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.main_text{
+    color: white;
+    text-align: center;
+    margin-top: 230px;
+    font-size: 80px;
+}
+.basket_counting{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 0 8px 0 7px;
+    border-radius: 50%;
+    background-color: #f10000;
+    text-align: center;
+    margin-left: -40px;
+    margin-top: -80px;
+}
+.basket_counting:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.chosen{
+    transition: background 0.3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+}
+.product_container{
+    transition: box-shadow 0.3s ease-in-out;
+}
+.product_container:hover{
+    cursor: pointer;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 15px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+}
+.buy_btn{
+    transition: background 0.3s ease-in-out;
+}
+
+.basket_btn{
+    transition: background 0.5s ease-in-out;
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -ms-transition: background 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out;
+}
+.chosen{
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+}
+#pages a{
+    color: blue;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10%;
+    text-decoration: none;
+    padding: 8px 14px;
+    margin-right: 6px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#pages a.active{
+   
+    box-shadow: 0 0 5px rgb(93, 93, 243);
+}
+#pages a:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(93, 93, 243);
+}
+
+

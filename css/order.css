@@ -1,0 +1,43 @@
+.success_message{
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.success_icon{
+    text-align: right;
+}
+
+@media (max-width: 1200px) { 
+    .success_icon{
+		width: 80px;
+	}
+	.success_message{
+		font-size: 32px;
+	}
+
+
+
+}
+@media only screen and (max-width: 991.98px) {
+    *{
+        text-align: center;
+    }
+	.success_icon{
+		width: 70px;
+	}
+	.success_message{
+        font-size: 25px;
+        width: 300px;
+	}
+  }
+
+
+  @media only screen and (max-width: 575.98px) {
+	.success_icon{
+		width: 20px;
+	}
+	.success_message{
+        font-size: 15px;
+	}
+
+  }

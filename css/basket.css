@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.divs{
+    width: 500px;
+    margin-right: 80px;
+}
+.div{
+    width: 120px;
+}
+.data{
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+}
+.symbol{
+    float: left;
+    border: none;
+}
+.symbol:hover{
+    cursor: pointer;
+}
+.aler{
+    font-size: 50px;
+    color: red;
+}
+.currency{
+    float: right;
+}
+.counter{
+    float: left;
+}
+.cost{
+    text-align: right;
+    float: right;
+}
+.currency{
+    float: right;
+}
+@media only screen and (max-width: 991.98px) {
+	.divs{
+        width: 300px;
+        margin-right: 40px;
+       
+	}
+  }
+  @media only screen and (max-width: 575.98px) {
+	.div{
+        width: 80px;
+        
+    }
+    .divs{
+        margin-right: 20px;
+    }
+	
+
+  }

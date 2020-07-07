@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cost{
+    font-size: 30px;
+}
+.buys_btn{
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+}
+.list{
+	list-style-type: none;
+}
+.button{
+	background-color: white;
+	border: 1px solid grey;
+	width: 20%;
+	padding: 0;
+}
+@media only screen and (max-width: 991.98px) {
+    .photo{
+	  width: 210px;
+	  height: 240px;
+	}
+	.title{
+		font-size: 25px;
+	  }
+	  .cost{
+		font-size: 20px;
+	  }
+	 
+  }
+  @media only screen and (max-width: 991.98px) {
+	.img{
+		width: 50%;
+	}
+	.button{
+		width: 20%;
+	}
+  }
+  @media only screen and (max-width: 575.98px) {
+	.img{
+		width: 70%;
+	}
+	.button{
+		width: 20%;
+	}
+
+  }
+  
+  
+
+
+

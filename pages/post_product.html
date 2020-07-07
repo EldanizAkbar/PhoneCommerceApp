@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../JS/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/post_product.css">
+    <link rel="icon" href="../images/lo.png">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 ">
+            <div class="container px-0">
+                <a class="navbar-brand" href="../home.html">
+                    <img src="../images/main_logo.png" alt="logophoto" width="150px" height="auto">
+                </a>
+                <ul class=" navbar-nav ">
+                    <li class="nav-item  mr-3">
+                        <a class="nav-link" href="../home.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="basket.html">Basket</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 ml-auto text-right ">
+                    <div class="basket-item">
+                        <img src="../images/shop_araba.png" alt="" width="120px" height="auto" class="mt-4">
+                         <a href="basket.html" id="basket-count" class="basket_counting">0</a>
+                     </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-3 col-sm-12 mt-5 text-center">
+
+                    <img src="" alt="" width="420px" height="550px"  id="photo" class="photo mb-3" >
+
+                  <div class=" text-center" width="250%">
+                   <button class="button ml-1">
+                    <img src="" alt="" width="100%" height="70px" id="img1" class=" p-2 img">   
+                   </button>
+                   <button class="button ml-1">
+                    <img src="" alt="" width="100%" height="70px" id="img2" class=" p-2 img">
+                   </button>
+                   <button class="button ml-1">
+                    <img src="" alt="" width="100%" height="70px" id="img3" class=" p-2 img">
+                   </button>
+                </div>      
+                </div>
+                <div class="col-sm-12 col-lg-6 ml-auto text-left mt-5" id="ala">
+                    <h1 id="title" class="title"></h1>
+                    <strong class="mt-4 cost" id="cost"></strong>
+                    <h4 class="mt-2">Spesifications</h4>
+                    <ul class="mb-4 list" id="spesifications">
+                    </ul>
+                   <a href="order.html"><button class="btn btn-success buys_btn">Buy</button></a> 
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container mb-5">
+            <div class="row mb-5 ">
+                <div class="col_md_12 mb-5  mx-auto">
+                    <h1>Recommended for you</h1>
+                </div>
+
+            </div>
+
+        </div>
+                <div id="products_div" class="row mx-auto">
+                
+    </main>
+
+    <script src="../JS/home.js"></script>
+    <script src="../JS/products.js"></script>
+    <script src="../JS/Productdata.js"></script>
+    <script src="../JS/Productmaker.js"></script>
+    <script src="../JS/post_product.js"></script>
+
+  
+</body>
+
+</html>
