@@ -40,7 +40,7 @@ if (!("count" in localStorage)) {
         }
         let Products = productmanager.getall();
         for (let product of Products) {
-            let Productsdiv = productmaker.productcontainer(product);
+            let Productsdiv = productmaker.productscontainer(product);
             document.getElementById("products_div").appendChild(Productsdiv);
         }
     })
