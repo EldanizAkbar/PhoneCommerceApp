@@ -129,7 +129,7 @@ let productmaker={
         box.id=qutu;
 
         let picture=document.createElement("img");
-        picture.src="/images/"+product.photo;
+        picture.src="images/"+product.photo;
         picture.className="mt-3"
         picture.style.width="165px";
         picture.style.height="200px"
@@ -202,7 +202,7 @@ let productmaker={
         box.id=qutu;
 
         let picture=document.createElement("img");
-        picture.src="/images/"+product.photo;
+        picture.src="../images/"+product.photo;
         picture.className="mt-3"
         picture.style.width="165px";
         picture.style.height="200px"
