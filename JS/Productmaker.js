@@ -193,5 +193,78 @@ let productmaker={
         })
         box.appendChild(btn);
         return box;
+        },
+     productscontainer: function(product){
+        let box=document.createElement("div");
+        box.className="col-lg-3 col-md-4 col-sm-6 col-8 border  text-center product_container mb-5 ml-auto mx-auto ";
+        let rund=Math.round(Math.random()*1000);
+        let qutu=`qutu_${rund}`;
+        box.id=qutu;
+
+        let picture=document.createElement("img");
+        picture.src="/images/"+product.photo;
+        picture.className="mt-3"
+        picture.style.width="165px";
+        picture.style.height="200px"
+        box.appendChild(picture);
+
+        let productName=document.createElement("p");
+        productName.innerHTML=`<strong>${product.name}</strong>`;
+        productName.className="text-center mt-3 main_ad";
+        box.appendChild(productName);
+
+        let product_cost=document.createElement("b");
+        product_cost.innerHTML=` <i>${product.price}</i> ${product.currency}`;
+        product_cost.className="d-block"
+        box.appendChild(product_cost);
+        let buy_link=document.createElement("a");
+        buy_link.href="pages/post_product.html";
+        buy_link.className="link ";
+        buy_link.target="blank"; 
+        $(function () {
+            $(buy_link).click(function () {
+               let a = $(this).siblings(".main_ad").text();
+               for (let f of products) {
+                  if (f.name == a) {
+                     let obj = {
+                        title: f.name,
+                        photo: "../images/"+f.photo,
+                        photo_1: "../images/"+f.photo_1,
+                        photo_2: "../images/"+f.photo_2,
+                        cost: f.price+f.currency,
+                        spesifications: f.spesifications
+                     }
+                     localStorage["post_product"] = JSON.stringify(obj);
+                  }
+               }
+            })
+         });   
+        box.appendChild(buy_link);
+
+        let btn_buy=document.createElement("button");
+        btn_buy.className="btn btn-success mt-3 mb-3 buy_btn col-lg-3";
+        btn_buy.innerText="Buy";
+        buy_link.appendChild(btn_buy);
+        let span =document.createElement("span");
+        span.className="span";
+        span.innerText=" ";
+        box.appendChild(span);
+
+        let btn=document.createElement("button");
+        btn.className="btn btn-outline-info mt-3 mb-3 basket_btn col-lg-8";
+        btn.innerText="Add to Basket";
+            let count = parseInt(Productdata.getcount());
+            document.getElementById("basket-count").innerText=count;
+            btn.addEventListener("click",function(){
+
+            let oneofproduct=new ProductModel(product.id,product.name,1,product.price);
+            Productdata.addproduct(oneofproduct);
+            let count = parseInt(Productdata.getcount());
+            document.getElementById("basket-count").innerText=count;
+            localStorage.count=count;
+            
+        })
+        box.appendChild(btn);
+        return box;
         }
 };
